@@ -1,0 +1,23 @@
+﻿@model KidKinder.Entities.AboutList
+
+@{
+    ViewBag.Title = "CreateAboutList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h5>Yeni Madde Girişi</h5>
+    </div>
+    <div class="card-block">
+        <form class="form-material" method="post">
+
+            <div class="form-group form-default">
+                <input type="text" name="Description" placeholder="Sınıf Adı" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-outline-primary">Kaydet</button>
+        </form>
+    </div>
+</div>
+

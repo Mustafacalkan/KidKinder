@@ -1,0 +1,49 @@
+﻿@model List<KidKinder.Entities.Testimonial>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
+}
+
+<div class="card">
+    <div class="card-header">
+        <h5>Referanslar</h5>
+        <span>Düşünceler ile ilgili ekleme, silme, güncelle gibi işlemleri aşağıdan gerçekleştirebilirsiniz.</span>
+
+    </div>
+    <div class="card-block table-border-style">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Resim Ekle</th>
+                        <th>Ad Soyad</th>
+                        <th>Ünvan</th>
+                        <th>Yorum</th>
+                        <th>Sil</th>
+                        <th>Güncelle</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        count++;
+                        <tr>
+                            <th scope="row">@count</th>
+                            <td>@item.ImageUrl</td>
+                            <td>@item.NameSurname</td>
+                            <td>@item.Title</td>
+                            <td>@item.Comment</td>
+                            <td><a href="/AdminTestimonial/RemoveTestimonial/@item.TestimonialId" class="btn btn-danger">Sil</a></td>
+                            <td><a href="/AdminTestimonial/UpdateTestimonial/@item.TestimonialId" class="btn btn-success">Güncelle</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

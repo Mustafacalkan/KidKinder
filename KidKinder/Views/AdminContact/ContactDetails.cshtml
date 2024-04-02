@@ -1,0 +1,24 @@
+﻿@model KidKinder.Entities.Contact
+@{
+    ViewBag.Title = "ContactDetails";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+<div class="card-block table-border-style">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <h4>@Model.NameSurname</h4>
+                    <hr />
+                    <p>@Model.Subject</p>
+                    <hr />
+                    <p>@Model.Message</p>
+                    <hr />
+                    <a href="/AdminContact/Index" class="btn btn-outline-info">Geri Dön</a>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>

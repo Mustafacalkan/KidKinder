@@ -1,0 +1,34 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@Html.Action("PartialHead", "UILayout")
+
+<body>
+
+    @Html.Action("PartialNavbar","UILayout")
+
+    @Html.Action("PartialFeature","UILayout")
+
+    @Html.Action("PartialAbout","About")
+
+    @Html.Action("ServicePartial","Service")
+
+    @Html.Action("ClassRoomPartial", "ClassRoom")
+
+    @Html.Action("BookASeatPartial", "BookASeat")
+
+    @Html.Action("TeacherPartial", "Teacher")
+
+    @Html.Action("TestimonialPartial", "Testimonial")
+
+    @Html.Action("PartialFooter", "UILayout")
+
+    @Html.Action("PartialScripts", "UILayout")
+</body>
+</html>
+

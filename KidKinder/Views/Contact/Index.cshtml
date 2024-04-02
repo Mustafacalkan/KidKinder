@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/UILayout.cshtml";
+}
+<div class="container-fluid pt-5">
+    <div class="container">
+        <div class="text-center pb-2">
+            <p class="section-title px-5">
+                <span class="px-2">İLETİŞİM</span>
+            </p>
+            <h1 class="mb-4">Herhangi Bir Soru İçin Bize Ulaşın</h1>
+        </div>
+        <div class="row">
+
+            @Html.Partial("~/Views/Contact/ContactForm.cshtml")
+            @Html.Action("ContactInfo")
+        </div>
+    </div>
+    <div class="row">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48192.22598670767!2d28.98511409552737!3d40.981171555091464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac790b17ba89d%3A0xd2d24ea0437a7ee2!2zS2FkxLFrw7Z5L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1710947043028!5m2!1str!2str" class="w-100" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>

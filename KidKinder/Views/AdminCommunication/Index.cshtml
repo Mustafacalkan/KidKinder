@@ -1,0 +1,44 @@
+﻿@model  KidKinder.Entities.Communication
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 1;
+}
+
+<div class="card">
+    <div class="card-header">
+        <h5>İletişim Bilgileri</h5>
+        <span>İletişim ile ilgili ekleme, silme, güncelle gibi işlemleri aşağıdan gerçekleştirebilirsiniz.</span>
+
+    </div>
+    <div class="card-block table-border-style">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Adres</th>
+                        <th>Telefon</th>
+                        <th>Email</th>
+                        <th>Açıklama</th>
+                        <th>Güncelle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">@count</th>
+                        <td>@Model.Address</td>
+                        <td>@Model.Phone</td>
+                        <td>@Model.Email</td>
+                        <td>@Model.Description</td>
+                        <td><a href="/AdminCommunication/UpdateCommunication/@Model.CommunicationId" class="btn btn-success">Güncelle</a></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

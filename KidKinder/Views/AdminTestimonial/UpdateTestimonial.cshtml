@@ -1,0 +1,35 @@
+﻿@model KidKinder.Entities.Testimonial
+
+@{
+    ViewBag.Title = "UpdateTestimonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+<div class="card">
+    <div class="card-header">
+        <h5>Referanslar Güncelleme Sayfası</h5>
+    </div>
+    <div class="card-block">
+        <form class="form-material" method="post">
+            <input type="hidden" name="TestimonialId" value="@Model.TestimonialId" />
+            <div class="form-group form-default">
+                <input type="text" name="ImageUrl" value="@Model.ImageUrl" placeholder="Başlık" class="form-control">
+            </div>
+            <div class="form-group form-default">
+                <input type="text" name="NameSurname" value="@Model.NameSurname" placeholder="Alt Başlık" class="form-control">
+            </div>
+            <div class="form-group form-default">
+                <input type="text" name="Title" value="@Model.Title" placeholder="Küçük Resim" class="form-control">
+            </div>
+            <div class="form-group form-default">
+                <input type="text" name="Comment" value="@Model.Comment" placeholder="Büyük Resim" class="form-control">
+            </div>
+            
+
+            <button type="submit" class="btn btn-primary">Referanslar Güncelle</button>
+        </form>
+    </div>
+</div>
+
+
