@@ -1,7 +1,8 @@
 <h3>KidKinder</h3>
 <h5>Projenin Temel Amacı</h5>
 <p>Anaokulumuz, ebeveynlerin çocuklarını istedikleri sınıfa kaydettirebilecekleri ve okulumuzun günlük faaliyetlerini kolayca takip edebilecekleri platform/p>
-# Kullandığım Teknolojiler :
+
+<h5>Kullandığım Teknolojiler</h5>
 <br>
   🏆Asp.Net
   <br>
